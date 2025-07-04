@@ -120,8 +120,8 @@ FEEDBACK_URL = "https://github.com/XiaoYouChR/Ghost-Downloader-3/issues"
 FIREFOX_ADDONS_URL = "https://addons.mozilla.org/zh-CN/firefox/addon/ghost-downloader/"
 # RELEASE_URL = "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/latest"
 BASE_UTILIZATION_THRESHOLD = 0.01 # 判断阈值
-标准差 = 1  # 判断标准差，让用户输入标准差视乎更符合直觉一点
-TIME_WEIGHT_FACTOR = 标准差 ** 2  # 判断精度（方差）
+STANDER_DEVIATION_THRESHOLD = 1  # 判断标准差阈值，让用户输入标准差视乎更符合直觉一点
+TIME_WEIGHT_FACTOR = STANDER_DEVIATION_THRESHOLD ** 2  # 判断精度（方差）
 
 Headers = {
     "accept-encoding": "deflate, br, gzip",
