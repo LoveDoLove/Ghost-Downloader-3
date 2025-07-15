@@ -62,6 +62,13 @@ class DownloadWorker:
     def cancel(self):
         if hasattr(self, '_task'):
             self._task.cancel()
+    
+    def __str__(self):
+        return f"Worker {self.startPos}-{self.progress}..{self.endPos}"
+    
+    def __repr__(self):
+        return self.__str__()
+        
 
 class WorkerStrategy(ABC):
     """Base strategy for handling download workers"""

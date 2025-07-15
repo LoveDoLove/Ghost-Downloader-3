@@ -299,6 +299,7 @@ class TaskCard(CardWidget, Ui_TaskCard):
             self.__launchTask()  # launchTask方法会重新初始化并启动任务
 
     def pauseTask(self):
+        print(f"{self.task.workers}")
         if self.status == "working":  # 暂停
             self.changeButtonStatus(enabled=False, icon=FIF.PLAY)
 
